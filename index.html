@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Country Maker</title>
+     <div id="container">
+        <h1>Country Maker</h1>
+        <button onclick="EnterName()">Enter My Name</button>
+        <button onclick="EnterCountryName()">Create Country Name</button> <br><br>
+        <button onclick="ShowName()">Show My Name</button>
+        <button onclick="ShowCountryName()">Show My Country Creation Name</button>
+     </div>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let UserName;
+    let CountryName;
+
+    function EnterName() {
+        UserName = window.prompt("Enter Your Name:")
+    }
+    function EnterCountryName() {
+        CountryName = window.prompt("Create Your Country Name:")
+    }
+    function ShowName() {
+        window.alert("Hello " + UserName)
+    }
+    function ShowCountryName() {
+        window.alert("I want to go to " + CountryName)
+    }
+</script>
+<style>
+    button {
+        background-color: hsla(198, 77%, 48%, 0.95);
+        color: white;
+        border: none;
+        font-size: 15px;
+        border-radius: 35px;
+    }
+    button:hover {
+        background-color: hsla(199, 51%, 74%, 0.95);
+        color: black;
+        border: none;
+        font-size: 15px;
+        border-radius: 35px;
+    }
+    h1 {
+        font-family:Arial, Helvetica, sans-serif
+    }
+</style>
